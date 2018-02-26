@@ -1,0 +1,60 @@
+title: {{ cookiecutter.project_name }}
+description: {{ cookiecutter.description }}
+author: Studio ANDco
+email: hello@andco.ch
+
+street: "Avenue du Ritz 35"
+city: "Sion"
+zip: "1950"
+state: "Valais"
+country: "Suisse"
+latitude: "46.235885"
+longitude: "7.3578723"
+
+twitter_username: "ANDco_o"
+
+ga: {{ cookiecutter.ga }}
+fb_app_id: {{ cookiecutter.fb_app_id }}
+
+baseurl: ""
+url: "https://{{ cookiecutter.project_slug }}.ch"
+
+exclude:
+
+# Build settings
+markdown: kramdown
+plugins:
+    - jekyll-feed
+    - jekyll-coffeescript
+    - jekyll-paginate
+    - jekyll-sitemap
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - node_modules
+    - package.json
+
+# Github forced settings
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+    noscript: false
+
+kramdown:
+    input: GFM
+    hard_wrap: false
+
+# Sitemap
+
+sitemap:
+    filename: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"

@@ -1,0 +1,19 @@
+{
+    "project_name": "My Project",
+    "project_slug": "my_project",
+    "description": "My Project description",
+
+    "street": "Avenue du Ritz 35",
+    "city": "Sion",
+    "zip": "1950",
+    "state": "Valais",
+    "country": "Suisse",
+    "latitude": "46.235885",
+    "longitude": "7.3578723",
+
+    "ga": "Google Analytics ID",
+    "fb_app_id": "Facebook APP id",
+    "_copy_without_render": [
+        "*.html"
+    ]
+}
