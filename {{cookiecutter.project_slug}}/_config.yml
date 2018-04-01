@@ -1,7 +1,14 @@
 title: {{ cookiecutter.project_name }}
 description: {{ cookiecutter.description }}
-author: Studio ANDco
+author:
+    name: Studio ANDco Sàrl
+    twitter: ANDco_o
 email: {{ cookiecutter.email }}
+lang: fr_CH
+logo: tile.png
+
+seo:
+    type: Business
 
 street: "Avenue du Ritz 35"
 city: "Sion"
@@ -11,15 +18,30 @@ country: "Suisse"
 latitude: "46.235885"
 longitude: "7.3578723"
 
-twitter_username: "{{ cookiecutter.twitter }}"
+social:
+  name: {{ cookiecutter.project_name }}
+  links:
 
+twitter:
+    username: "{{ cookiecutter.twitter }}"
+
+facebook:
+    app_id: {{ cookiecutter.fb_app_id }}
+    publisher: "https://www.facebook.com/andcohello"
+
+google_site_verification: googleddcee30cf477c8ba
 ga: {{ cookiecutter.ga }}
-fb_app_id: {{ cookiecutter.fb_app_id }}
 
 baseurl: ""
 url: "https://{{ cookiecutter.project_slug }}.ch"
 
 exclude:
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /files/facebook.png
 
 # Build settings
 markdown: kramdown
@@ -28,6 +50,7 @@ plugins:
     - jekyll-coffeescript
     - jekyll-paginate
     - jekyll-sitemap
+    - jekyll-seo-tag
 exclude:
     - Gemfile
     - Gemfile.lock
