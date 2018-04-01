@@ -1,7 +1,7 @@
 title: {{ cookiecutter.project_name }}
 description: {{ cookiecutter.description }}
 author: Studio ANDco
-email: hello@andco.ch
+email: {{ cookiecutter.email }}
 
 street: "Avenue du Ritz 35"
 city: "Sion"
@@ -11,7 +11,7 @@ country: "Suisse"
 latitude: "46.235885"
 longitude: "7.3578723"
 
-twitter_username: "ANDco_o"
+twitter_username: "{{ cookiecutter.twitter }}"
 
 ga: {{ cookiecutter.ga }}
 fb_app_id: {{ cookiecutter.fb_app_id }}
